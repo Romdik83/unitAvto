@@ -14,8 +14,8 @@ class CashbackHackServiceTest {
     void whenBuyingAt900TheSystemOffersToBuyAnother100() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
-        int actual= service.remain(amount);
-        int expected=100;
+        int actual = service.remain(amount);
+        int expected = 100;
         assertEquals(actual, expected);
     }
 
@@ -23,8 +23,8 @@ class CashbackHackServiceTest {
     void whenBuyingAt800TheSystemOffersToBuyAnother200() {
         CashbackHackService service = new CashbackHackService();
         int amount = 800;
-        int actual= service.remain(amount);
-        int expected=200;
+        int actual = service.remain(amount);
+        int expected = 200;
         assertEquals(actual, expected);
     }
 
@@ -32,8 +32,8 @@ class CashbackHackServiceTest {
     void whenBuyingFor1000TheSystemDoesNotOfferAnything() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
-        int actual= service.remain(amount);
-        int expected=0;
+        int actual = service.remain(amount);
+        int expected = 0;
         assertEquals(actual, expected);
     }
 
@@ -41,8 +41,8 @@ class CashbackHackServiceTest {
     void whenBuyingFor1100TheSystemDoesNotOfferAnything() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1100;
-        int actual= service.remain(amount);
-        int expected=0;
+        int actual = service.remain(amount);
+        int expected = 0;
         assertEquals(actual, expected);
     }
 
@@ -50,8 +50,8 @@ class CashbackHackServiceTest {
     void whenBuyingAt1900TheSystemOffersToBuyAnother100() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1900;
-        int actual= service.remain(amount);
-        int expected=100;
+        int actual = service.remain(amount);
+        int expected = 100;
         assertEquals(actual, expected);
     }
 
@@ -59,8 +59,8 @@ class CashbackHackServiceTest {
     void whenBuyingAt1800TheSystemOffersToBuyAnother200() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1800;
-        int actual= service.remain(amount);
-        int expected=200;
+        int actual = service.remain(amount);
+        int expected = 200;
         assertEquals(actual, expected);
     }
 }
